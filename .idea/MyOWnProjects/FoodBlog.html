@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial;
+      padding: 20px;
+      background: #f1f1f1;
+    }
+
+    /* Header/Blog Title */
+    .header {
+      padding: 30px;
+      font-size: 40px;
+      text-align: center;
+      background: white;
+    }
+
+    /* Create two unequal columns that floats next to each other */
+    /* Left column */
+    .leftcolumn {
+      float: left;
+      width: 75%;
+    }
+
+    /* Right column */
+    .rightcolumn {
+      float: left;
+      width: 25%;
+      padding-left: 20px;
+    }
+
+    /* Fake image */
+    .fakeimg {
+      background-color: #aaa;
+      width: 100%;
+      padding: 20px;
+    }
+
+    /* Add a card effect for articles */
+    .card {
+      background-color: white;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #ddd;
+      margin-top: 20px;
+    }
+
+    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 800px) {
+      .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+      }
+    }
+
+  </style>
+  <meta charset="UTF-8">
+  <title>FoodBlog</title>
+</head>
+<body>
+<div class="header">
+  <h1>Håndlagt Næring</h1>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Dagens Måltid</h2>
+      <h5>Dumplings, 8 sept, 2025</h5>
+      <div class="fakeimg" style="height:200px;">Dumplings</div>
+      <P>Dette var da dagens middag, laget med:</P>
+      <p><ul>
+        <li>2stk Sopp</li>
+        <li>1stk Løk</li>
+        <li>3 båter Hvitløk</li>
+        <li>1 bit Ingefær</li>
+        <li>2 ss SoyaSaus</li>
+        <li>2 stk Vårløk</li>
+    </ul></p>
+      <p>Som vi stekte i en panne, for så å blande 100g med mel, og 150dl varmt vann, lagde en deig ut av det. så
+      pakket vi inn ingrediensene i en deg ball og steamet de i 8-10 minutter og koste oss med det.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Om Meg</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>Hei, jeg er da ei jente som studerer IT å prøver å utvikle meg både kulinariskt og teknologiskt.
+       Jeg er veldig glad i å lage mat og jeg elsker det teknologiske bak det å lage en nettside, så dette
+       er mitt forsøk på å kombinere begge. Jeg prøver meg fram så kan hende det skjer litt feil her og der.</p>
+    </div>
+    <div class="card">
+      <h3>Populære Innlegg</h3>
+      <div class="fakeimg">Imgae</div><br>
+      <div class="fakeimg">Imgae</div><br>
+      <div class="fakeimg">Imgae</div>
+    </div>
+    <div class="card">
+      <h3>Følg meg</h3>
+      <P>Følg meg gjerne på Insta, face eller youtube der jeg også legger ut nye ting innimellom.</P>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Slutten for denne gang</h2>
+</div>
+
+</body>
+</html>
